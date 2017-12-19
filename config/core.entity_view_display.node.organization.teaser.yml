@@ -18,5 +18,9 @@ content:
     weight: 100
     region: content
 hidden:
+  field_description_org: true
   field_headquarters_location_org: true
+  field_image_org: true
+  field_linkedin_org: true
   field_name_org: true
+  field_website_org: true
