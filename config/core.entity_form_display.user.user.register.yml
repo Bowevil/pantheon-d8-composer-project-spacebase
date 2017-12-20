@@ -1,8 +1,9 @@
-uuid: 3719d620-0f94-4406-9910-6a95dbaf9c09
+uuid: df5ab042-f9bd-4ad4-ac3f-3140060bfe77
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.user.register
     - field.field.user.user.field_bio_user
     - field.field.user.user.field_email_user
     - field.field.user.user.field_first_name_user
@@ -23,10 +24,10 @@ dependencies:
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
-id: user.user.default
+id: user.user.register
 targetEntityType: user
 bundle: user
-mode: default
+mode: register
 content:
   account:
     weight: 0
@@ -86,12 +87,6 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  field_member_organizations_user:
-    weight: 14
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_tagline_user:
     weight: 8
     settings:
@@ -132,4 +127,5 @@ content:
     third_party_settings: {  }
     weight: 7
     region: content
-hidden: {  }
+hidden:
+  field_member_organizations_user: true

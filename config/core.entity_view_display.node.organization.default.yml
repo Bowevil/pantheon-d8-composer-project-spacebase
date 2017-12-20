@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.organization.field_image_org
     - field.field.node.organization.field_linkedin_org
     - field.field.node.organization.field_name_org
+    - field.field.node.organization.field_organization_owner_org
     - field.field.node.organization.field_website_org
     - node.type.organization
   module:
@@ -23,21 +24,21 @@ mode: default
 content:
   field_description_org:
     weight: 105
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_headquarters_location_org:
     weight: 103
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: address_default
     region: content
   field_image_org:
     weight: 104
-    label: above
+    label: inline
     settings:
       image_style: ''
       image_link: ''
@@ -46,7 +47,7 @@ content:
     region: content
   field_linkedin_org:
     weight: 106
-    label: above
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -58,15 +59,22 @@ content:
     region: content
   field_name_org:
     weight: 102
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
+  field_organization_owner_org:
+    weight: 108
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: author
+    region: content
   field_website_org:
     weight: 107
-    label: above
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -79,4 +87,6 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }
