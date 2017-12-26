@@ -1,0 +1,48 @@
+uuid: e7115153-5425-45a3-96d2-b08559bab0cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.organization_group
+id: group.organization_group.default
+targetEntityType: group
+bundle: organization_group
+mode: default
+content:
+  changed:
+    type: timestamp
+    weight: 3
+    region: content
+    label: inline
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  created:
+    type: timestamp
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  label:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden: {  }
