@@ -6,9 +6,4 @@ id: spacebase_user
 label: 'Spacebase User'
 weight: 3
 is_admin: null
-permissions:
-  - 'create organization content'
-  - 'delete organization revisions'
-  - 'delete own organization content'
-  - 'edit own organization content'
-  - 'revert organization revisions'
+permissions: {  }
