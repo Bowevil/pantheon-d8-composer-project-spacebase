@@ -1,0 +1,19 @@
+uuid: 03290cde-f2c7-4ce0-8f84-3c8a40c970c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.organization_group
+    - node.type.organization
+  module:
+    - gnode
+    - node
+id: group_content_type_94c5f31be2db2
+label: 'Organization group: Group node (Organization)'
+description: 'Adds <em class="placeholder">Organization</em> content to groups both publicly and privately.'
+group_type: organization_group
+content_plugin: 'group_node:organization'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: true
