@@ -7732,55 +7732,6 @@
         }
     },
     {
-        "name": "drupal/group",
-        "version": "1.0.0-rc1",
-        "version_normalized": "1.0.0.0-RC1",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupal.org/project/group",
-            "reference": "8.x-1.0-rc1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/group-8.x-1.0-rc1.zip",
-            "reference": "8.x-1.0-rc1",
-            "shasum": "6991939b310fbc5ac19151eb0d70e9b30f340354"
-        },
-        "require": {
-            "drupal/core": "*"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "branch-alias": {
-                "dev-1.x": "1.x-dev"
-            },
-            "drupal": {
-                "version": "8.x-1.0-rc1",
-                "datestamp": "1498033733",
-                "security-coverage": {
-                    "status": "not-covered",
-                    "message": "RC releases are not covered by Drupal security advisories."
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "kristiaanvandeneynde",
-                "homepage": "https://www.drupal.org/user/1345130"
-            }
-        ],
-        "description": "This module allows you to group users, content and other entities",
-        "homepage": "https://www.drupal.org/project/group",
-        "support": {
-            "source": "http://cgit.drupalcode.org/group"
-        }
-    },
-    {
         "name": "drupal/og",
         "version": "dev-1.x",
         "version_normalized": "dev-1.x",
@@ -7863,6 +7814,50 @@
             "source": "https://cgit.drupalcode.org/og",
             "issues": "https://drupal.org/project/issues/og",
             "irc": "irc://irc.freenode.org/drupal-og"
+        }
+    },
+    {
+        "name": "drupal/group",
+        "version": "dev-1.x",
+        "version_normalized": "dev-1.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/group",
+            "reference": "19495976aa76c52bcac96461e1b8af4a883eff6d"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "time": "2017-12-19T15:44:02+00:00",
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-rc1+11-dev",
+                "datestamp": "1513697584",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Dev releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "kristiaanvandeneynde",
+                "homepage": "https://www.drupal.org/user/1345130"
+            }
+        ],
+        "description": "This module allows you to group users, content and other entities",
+        "homepage": "https://www.drupal.org/project/group",
+        "support": {
+            "source": "http://cgit.drupalcode.org/group"
         }
     }
 ]

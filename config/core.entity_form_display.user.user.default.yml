@@ -9,7 +9,6 @@ dependencies:
     - field.field.user.user.field_home_location_user
     - field.field.user.user.field_last_name_user
     - field.field.user.user.field_linkedin_user
-    - field.field.user.user.field_member_organizations_user
     - field.field.user.user.field_tagline_user
     - field.field.user.user.field_website_user
     - field.field.user.user.user_picture
@@ -85,12 +84,6 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
-    region: content
-  field_member_organizations_user:
-    weight: 14
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   field_tagline_user:
     weight: 8
